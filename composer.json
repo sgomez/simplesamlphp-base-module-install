@@ -1,0 +1,24 @@
+{
+    "name": "sgomez/simplesamlphp-base-module-install",
+    "description": "A Composer plugin that overrides simplesamlphp/composer-module-installer.",
+    "type": "composer-plugin",
+    "keywords": ["simplesamlphp"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sgomez\\SimpleSamlPhp\\": "src/"
+        }
+    },
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.4"
+    },
+    "replace": {
+        "simplesamlphp/composer-module-installer": "*"
+    },
+    "extra": {
+        "class": "Sgomez\\SimpleSamlPhp\\Composer\\ModuleInstallerPlugin"
+    }
+}
